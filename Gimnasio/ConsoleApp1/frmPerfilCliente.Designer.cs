@@ -49,9 +49,27 @@
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtFechaNacimiento = new System.Windows.Forms.TextBox();
             this.gbDatosMembresia = new System.Windows.Forms.GroupBox();
-            this.lbl = new System.Windows.Forms.Label();
+            this.lblTipoMembresia = new System.Windows.Forms.Label();
+            this.lblFreez = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblFechaInicio = new System.Windows.Forms.Label();
+            this.lblFechaFin = new System.Windows.Forms.Label();
+            this.lblPeriodoFreezing = new System.Windows.Forms.Label();
+            this.txtIdMembresia = new System.Windows.Forms.TextBox();
+            this.txtTipoMembresia = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtFechaFin = new System.Windows.Forms.TextBox();
+            this.txtFechaInicio = new System.Windows.Forms.TextBox();
+            this.txtPeriodoFreez = new System.Windows.Forms.TextBox();
+            this.txtFreezRestante = new System.Windows.Forms.TextBox();
+            this.gbServiciosAd = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbDatosPers1.SuspendLayout();
             this.gbDatosMembresia.SuspendLayout();
+            this.gbServiciosAd.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDni
@@ -226,36 +244,183 @@
             // 
             // txtFechaNacimiento
             // 
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(486, 309);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(488, 309);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
             this.txtFechaNacimiento.Size = new System.Drawing.Size(117, 20);
             this.txtFechaNacimiento.TabIndex = 17;
             // 
             // gbDatosMembresia
             // 
-            this.gbDatosMembresia.Controls.Add(this.lbl);
+            this.gbDatosMembresia.Controls.Add(this.txtFreezRestante);
+            this.gbDatosMembresia.Controls.Add(this.txtPeriodoFreez);
+            this.gbDatosMembresia.Controls.Add(this.txtFechaInicio);
+            this.gbDatosMembresia.Controls.Add(this.txtFechaFin);
+            this.gbDatosMembresia.Controls.Add(this.txtEstado);
+            this.gbDatosMembresia.Controls.Add(this.txtTipoMembresia);
+            this.gbDatosMembresia.Controls.Add(this.txtIdMembresia);
+            this.gbDatosMembresia.Controls.Add(this.lblPeriodoFreezing);
+            this.gbDatosMembresia.Controls.Add(this.lblFechaFin);
+            this.gbDatosMembresia.Controls.Add(this.lblFechaInicio);
+            this.gbDatosMembresia.Controls.Add(this.lblEstado);
+            this.gbDatosMembresia.Controls.Add(this.lblFreez);
+            this.gbDatosMembresia.Controls.Add(this.lblTipoMembresia);
             this.gbDatosMembresia.Controls.Add(this.lblIdMembresia);
             this.gbDatosMembresia.Location = new System.Drawing.Point(43, 406);
             this.gbDatosMembresia.Name = "gbDatosMembresia";
-            this.gbDatosMembresia.Size = new System.Drawing.Size(622, 207);
+            this.gbDatosMembresia.Size = new System.Drawing.Size(622, 199);
             this.gbDatosMembresia.TabIndex = 11;
             this.gbDatosMembresia.TabStop = false;
             this.gbDatosMembresia.Text = "Datos de Membresia";
             // 
-            // lbl
+            // lblTipoMembresia
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(38, 62);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(35, 13);
-            this.lbl.TabIndex = 10;
-            this.lbl.Text = "label1";
+            this.lblTipoMembresia.AutoSize = true;
+            this.lblTipoMembresia.Location = new System.Drawing.Point(35, 63);
+            this.lblTipoMembresia.Name = "lblTipoMembresia";
+            this.lblTipoMembresia.Size = new System.Drawing.Size(100, 13);
+            this.lblTipoMembresia.TabIndex = 10;
+            this.lblTipoMembresia.Text = "Tipo de Membresia:";
+            // 
+            // lblFreez
+            // 
+            this.lblFreez.AutoSize = true;
+            this.lblFreez.Location = new System.Drawing.Point(359, 163);
+            this.lblFreez.Name = "lblFreez";
+            this.lblFreez.Size = new System.Drawing.Size(96, 13);
+            this.lblFreez.TabIndex = 11;
+            this.lblFreez.Text = "Freezing Restante:";
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(35, 95);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(43, 13);
+            this.lblEstado.TabIndex = 12;
+            this.lblEstado.Text = "Estado:";
+            // 
+            // lblFechaInicio
+            // 
+            this.lblFechaInicio.AutoSize = true;
+            this.lblFechaInicio.Location = new System.Drawing.Point(35, 129);
+            this.lblFechaInicio.Name = "lblFechaInicio";
+            this.lblFechaInicio.Size = new System.Drawing.Size(82, 13);
+            this.lblFechaInicio.TabIndex = 13;
+            this.lblFechaInicio.Text = "Fecha de inicio:";
+            // 
+            // lblFechaFin
+            // 
+            this.lblFechaFin.AutoSize = true;
+            this.lblFechaFin.Location = new System.Drawing.Point(359, 129);
+            this.lblFechaFin.Name = "lblFechaFin";
+            this.lblFechaFin.Size = new System.Drawing.Size(69, 13);
+            this.lblFechaFin.TabIndex = 14;
+            this.lblFechaFin.Text = "Fecha de fin:";
+            // 
+            // lblPeriodoFreezing
+            // 
+            this.lblPeriodoFreezing.AutoSize = true;
+            this.lblPeriodoFreezing.Location = new System.Drawing.Point(35, 163);
+            this.lblPeriodoFreezing.Name = "lblPeriodoFreezing";
+            this.lblPeriodoFreezing.Size = new System.Drawing.Size(136, 13);
+            this.lblPeriodoFreezing.TabIndex = 15;
+            this.lblPeriodoFreezing.Text = "Fin de Periodo de Freezing:";
+            // 
+            // txtIdMembresia
+            // 
+            this.txtIdMembresia.Location = new System.Drawing.Point(490, 32);
+            this.txtIdMembresia.Name = "txtIdMembresia";
+            this.txtIdMembresia.Size = new System.Drawing.Size(116, 20);
+            this.txtIdMembresia.TabIndex = 16;
+            // 
+            // txtTipoMembresia
+            // 
+            this.txtTipoMembresia.Location = new System.Drawing.Point(491, 63);
+            this.txtTipoMembresia.Name = "txtTipoMembresia";
+            this.txtTipoMembresia.Size = new System.Drawing.Size(115, 20);
+            this.txtTipoMembresia.TabIndex = 17;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(491, 95);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(115, 20);
+            this.txtEstado.TabIndex = 18;
+            // 
+            // txtFechaFin
+            // 
+            this.txtFechaFin.Location = new System.Drawing.Point(491, 126);
+            this.txtFechaFin.Name = "txtFechaFin";
+            this.txtFechaFin.Size = new System.Drawing.Size(115, 20);
+            this.txtFechaFin.TabIndex = 19;
+            // 
+            // txtFechaInicio
+            // 
+            this.txtFechaInicio.Location = new System.Drawing.Point(202, 126);
+            this.txtFechaInicio.Name = "txtFechaInicio";
+            this.txtFechaInicio.Size = new System.Drawing.Size(115, 20);
+            this.txtFechaInicio.TabIndex = 20;
+            // 
+            // txtPeriodoFreez
+            // 
+            this.txtPeriodoFreez.Location = new System.Drawing.Point(202, 156);
+            this.txtPeriodoFreez.Name = "txtPeriodoFreez";
+            this.txtPeriodoFreez.Size = new System.Drawing.Size(115, 20);
+            this.txtPeriodoFreez.TabIndex = 21;
+            // 
+            // txtFreezRestante
+            // 
+            this.txtFreezRestante.Location = new System.Drawing.Point(491, 160);
+            this.txtFreezRestante.Name = "txtFreezRestante";
+            this.txtFreezRestante.Size = new System.Drawing.Size(115, 20);
+            this.txtFreezRestante.TabIndex = 22;
+            // 
+            // gbServiciosAd
+            // 
+            this.gbServiciosAd.Controls.Add(this.label1);
+            this.gbServiciosAd.Location = new System.Drawing.Point(43, 630);
+            this.gbServiciosAd.Name = "gbServiciosAd";
+            this.gbServiciosAd.Size = new System.Drawing.Size(622, 107);
+            this.gbServiciosAd.TabIndex = 12;
+            this.gbServiciosAd.TabStop = false;
+            this.gbServiciosAd.Text = "Servicios Adicionales";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(235, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "No está afiliado a ningún servicio.";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(43, 770);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(622, 100);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cursos inscritos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(245, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "No está inscrito a ningún curso.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // frmPerfilCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 799);
+            this.ClientSize = new System.Drawing.Size(723, 892);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbServiciosAd);
             this.Controls.Add(this.lblApMat);
             this.Controls.Add(this.lblApPat);
             this.Controls.Add(this.lblNombre);
@@ -268,6 +433,10 @@
             this.gbDatosPers1.PerformLayout();
             this.gbDatosMembresia.ResumeLayout(false);
             this.gbDatosMembresia.PerformLayout();
+            this.gbServiciosAd.ResumeLayout(false);
+            this.gbServiciosAd.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,6 +465,22 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.GroupBox gbDatosMembresia;
-        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lblTipoMembresia;
+        private System.Windows.Forms.Label lblFechaFin;
+        private System.Windows.Forms.Label lblFechaInicio;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Label lblFreez;
+        private System.Windows.Forms.TextBox txtFreezRestante;
+        private System.Windows.Forms.TextBox txtPeriodoFreez;
+        private System.Windows.Forms.TextBox txtFechaInicio;
+        private System.Windows.Forms.TextBox txtFechaFin;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtTipoMembresia;
+        private System.Windows.Forms.TextBox txtIdMembresia;
+        private System.Windows.Forms.Label lblPeriodoFreezing;
+        private System.Windows.Forms.GroupBox gbServiciosAd;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
