@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace ConsoleApp1
 {
-    public partial class frmRegistrarVenta : Form
+    public partial class frmPerfilCliente : Form
     {
-        public frmRegistrarVenta()
+        public frmPerfilCliente()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void lblApPat_Click(object sender, EventArgs e)
         {
 
         }
