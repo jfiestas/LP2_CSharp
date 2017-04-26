@@ -54,6 +54,12 @@
     <Compile Include="Empresa.cs" />
     <Compile Include="Entrenador.cs" />
     <Compile Include="Factura.cs" />
+    <Compile Include="frmCrearEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearEmpleado.designer.cs">
+      <DependentUpon>frmCrearEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPerfilCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCrearEmpleado.resx">
+      <DependentUpon>frmCrearEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPerfilCliente.resx">
       <DependentUpon>frmPerfilCliente.cs</DependentUpon>
     </EmbeddedResource>
