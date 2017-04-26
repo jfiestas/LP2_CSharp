@@ -60,6 +60,12 @@
     <Compile Include="InscribirseCurso.Designer.cs">
       <DependentUpon>InscribirseCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCrearEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearEmpleado.designer.cs">
+      <DependentUpon>frmCrearEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPerfilCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
   <ItemGroup>
     <EmbeddedResource Include="InscribirseCurso.resx">
       <DependentUpon>InscribirseCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearEmpleado.resx">
+      <DependentUpon>frmCrearEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPerfilCliente.resx">
       <DependentUpon>frmPerfilCliente.cs</DependentUpon>
